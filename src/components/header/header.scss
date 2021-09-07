@@ -1,0 +1,105 @@
+// .headerContainer {
+//     nav {
+//         // height: 6.5rem;
+//         // display: flex;
+//         // justify-content: center;
+//         // padding: 2em;
+//         -webkit-box-ordinal-group: 2;
+//         order: 1;
+//         margin:2rem;
+        
+//     ul{
+//         // list-style: none;
+//         // margin: 0;
+//         // padding: 0;
+//         // display: flex;
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         display: -webkit-box;
+//         display: flex;
+        
+        
+//         li{
+//             // margin-left: 2em;
+//             // display: flex;
+//             -webkit-box-flex: 3;
+//             flex: 3;
+//         a {
+//             // color: #fff;
+//             // text-decoration: none;
+//             // padding: 2em 4em;
+//             // align-self: center;
+//             text-decoration: none;
+//             color: #fff;
+//         }
+//     }
+//     }
+//     .circulo {
+//         width: 2.5rem;
+//         height: 2.5rem;
+//         border-radius: 50%;
+//         background-color: #ff98e5;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+    
+//     .bars{
+//         width: 1.5rem;
+//         height: 1.5rem;
+//         color: #fff;
+//     }
+// }
+// }
+// @media all and (max-width:768px) {
+//     .headerContainer{
+//         li
+//     {
+//     flex-basis: 100%;
+//     }
+//     }
+// }
+// }
+.headerContainer{
+    padding: 2em;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        align-self: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .right-nav{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .circulo {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    background-color: #ff98e5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .bars{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                color: #fff;
+                            }
+        }
+    }
+}
