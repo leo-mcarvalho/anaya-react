@@ -1,51 +1,61 @@
 import "./home.scss"
 export function Home() {
     return (
-        <main>
-            <div className="container">
+        <main className="home">
+            <section className="top">
+                <div className="container">
                     <div className="col">
-                        <h1 className="txtH1">Anaya</h1>
-                        <p className="txtP">O jogo te leva para o mundo de Anaya, uma mulher preta que lida com problemas de ansiedade e busca vencer seus desafios para encontrar a felicidade e ficar em paz consigo mesma.</p>
+                        <h1 className="txtH1">Sinopse</h1>
+                        <p className="descricao">O jogo é uma história interativa que te leva para o mundo de Anaya, uma mulher preta que lida com problemas de ansiedade e busca vencer seus desafios e traumas para encontrar a felicidade e ficar em paz consigo mesma.
+                            E você pode ajuda-la nessa jornada de autoconhecimento, mergulhe na vida dela e use sua experiência para guia-la em meio aos desafios da vida adulta.</p>
                         <div className="btn">
-                        <button className="botao" type="button">Jogue agora</button>
+                            <button className="botao" type="button">Jogue agora</button>
                         </div>
                     </div>
-                    <div className="col">
-                        <img className="img-anaya" src="/images/home/placeholder anaya.png" alt="Foto de uma mulher negra" />
+                    <div className="right-block">
+                        <img className="img-anaya" src="/images/home/Anaya_22.png" alt="Foto de uma mulher negra" />
                     </div>
-            </div>
-            <div className="container">
-                <section className="row">
-                    <div className="col">
-                        <p>
-                        “9,3% da população
-                        brasileira sofre de
-                        transtorno de
-                        ansiedade”.
-                        - OMS"
-                        </p>
-                    </div>
-                    <div className="col">
-                        <p>
-                        Segundo uma pesquisa realizada pelo Ministério da Saúde, a ansiedade é o transtorno mais presente durante a pandemia de Covid-19. Além da ansiedade, encontrada em 86,5% dos respondentes, foi constatada uma presença moderada de transtorno do estresse pós-traumático (45,5%). A proporção de depressão grave foi um pouco mais baixa, 16%.
-                        O Ministério divulgou os resultados preliminares ontem, dia 29. A pesquisa foi feita por meio de um questionário online, que ficou disponível de 23 de abril a 15 de maio deste ano. O objetivo era analisar o impacto da pandemia e isolamento social na saúde mental do brasileiro.
-                        </p>
-                    </div>
-                    <div className="container">A primeira amostra do estudo envolveu 17.491 pessoas com idade média de 38,2 anos (variação de 18 e 92 anos), das quais 98,1% não tinham sido diagnosticadas com Covid-19. Entre eles, 20,2% eram profissionais de saúde.
-                        Do total, a maioria era do sexo feminino (71,9%), de raça/cor autorreferida branca (61,3%), casados (44,3%), residentes em bairros populares (46,8%) e com renda mensal variando entre R$1.049,00 e R$2.096,00 (24,3%).
-                        Segundo os dados divulgados, 25% deles concluíram ensino superior e trabalharam para uma pessoa ou empresa privada (25,5%), e 18% eram desempregados. Entre os que trabalhavam, 31% continuavam trabalhando presencialmente e 93% adotaram o distanciamento social.</div>
-                    </section>
-            </div>
-        <div className="container">
-            <section className="row">
-                <div>
-                    <img className="img" src="/images/home/transtorno1.svg" alt="desenho de rapaz ansioso" />
-                    <img className="img" src="/images/home/transtorno2.svg" alt="desenho de moça deprimida" />
-                    <img className="img" src="/images/home/transtorno3.svg" alt="desenho de moça bipolar" />
-                    <img className="img" src="/images/home/transtorno4.svg" alt="desenho de rapaz esquizofrenico" />
                 </div>
             </section>
-        </div>
+            <section className="bot">
+                <div className="container">
+                    <div className="col">
+                        <p id="citacao" className="citacao">
+                            “9,3% da população
+                            brasileira sofre de
+                            transtorno de
+                            ansiedade”.
+                            - OMS"
+                        </p>
+                    </div>
+                    <div className="right-block">
+                        <p className="txtP">
+                            O Brasil é o país com a maior taxa de pessoas com transtornos de ansiedade no mundo e o quinto em casos de depressão. Segundo estimativas da Organização Mundial da Saúde (OMS) divulgadas nesta quinta-feira, 23, 9,3% dos brasileiros têm algum transtorno de ansiedade e a depressão afeta 5,8% da população. Pesam nesse cenário, dizem especialistas, fatores socioeconômicos, como pobreza e desemprego, e ambientais, como o estilo de vida em grandes cidades.
+                        </p>
+                    </div>
+                </div>
+                <div className="container">
+                    <p className="txtP">O transtorno de ansiedade é marcado por sintomas como a dificuldade de concentração, problemas no sono e preocupação excessiva. Segundo André Brunoni, psiquiatra do Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (USP), esses sintomas podem levar ao quadro depressivo, caracterizado pelos sintomas do transtorno acrescido de alterações no humor, como apatia, solidão, tristeza, além do isolamento social e dores sem justificativa física. </p>
+                </div>
+                <div className="container">
+                    <img className="game-pic" src="images/home/games.jpeg" alt="foto de duas pessoas jogando videogame" />
+                </div>
+                <div className="container">
+                    <p className="txtP">“Os games são excelentes recursos, pois podem ampliar as possibilidades de diálogo, distrações, além de facilitar aprendizados e conexões nesse contexto de isolamento social”, afirma Elisa Faria, psicóloga da Ama Psicologia Clínica em Natal, Rio Grande do Norte (RN). “Antes da pandemia, era comum relatos sobre a ausência de tempo para atividades em conjunto, promovendo, portanto, certos distanciamentos ainda que todos morando em uma mesma residência. Agora, com a necessidade que todos fiquem em casa, essas atividades interativas podem ajudar a construir essas aproximações e mais tempo em família”.</p>
+                </div>
+                <div className="container">
+                    <p className="txtP">“Estar em casa, mesmo acompanhado, e não poder socializar com mais ninguém traz o desafio de lidar com as emoções de maneira totalmente diferente”, comenta Luciana Vainstoc, psicóloga esportiva. “Os videogames são, sim, uma forma de socializar, de estar perto mesmo estando longe. Os jogos são espaços de união para momentos em família, para compartilhar, se conectar, deixar um pouco de lado as obrigações. Quando nos conectamos com nossa parte mais lúdica e criativa, a ansiedade e angústia podem baixar”.</p>
+                </div>
+
+                <div className="imgs">
+                    <div className="transtornos">
+                        <img className="imagem" src="/images/home/transtorno1.svg" alt="desenho de rapaz ansioso" />
+                        <img className="imagem" src="/images/home/transtorno2.svg" alt="desenho de moça deprimida" />
+                        <img className="imagem" src="/images/home/transtorno3.svg" alt="desenho de moça bipolar" />
+                        <img className="imagem" src="/images/home/transtorno4.svg" alt="desenho de rapaz esquizofrenico" />
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }

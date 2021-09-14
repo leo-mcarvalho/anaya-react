@@ -1,60 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato&family=Merienda:wght@700&family=Montserrat:wght@500&family=Poppins&display=swapdisplay=swap");
 
+.home {
+    .top {
+        margin-bottom: 12rem;
+    }
+    .bot {
+        margin-top: 10rem;
+    }
     .txtH1 {
-    font-family: "Merienda", cursive;
-}
+        font-family: "Merienda", cursive;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
 
-.txtP {
-    font-family: "Montserrat", sans-serif;
-}
+    .txtP {
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 1.5rem !important;
+    }
 
-.txtMini {
-    font-family: "Lato", sans-serif;
-}
-.btn{
-    text-align:center;
+    .txtMini {
+        font-family: "Lato", sans-serif;
+    }
+    .citacao {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: calc(2rem + 1vw);
+    }
+    .btn {
+        text-align: center;
     }
     .botao {
-    background: linear-gradient(100deg, #a8c0ff 2%, #ffc2e2 98%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-style: none;
-    width: 7rem;
-    height: 3rem;
-    border-radius: 10px;
-    color: #fff;
-    font-family: 3rem "Lato", sans-serif;
-    margin: 2rem;
-}
-    
-.img-anaya{
-    max-width: 100%;
-    height: auto
+        background: linear-gradient(100deg, #a8c0ff 2%, #ffc2e2 98%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-style: none;
+        width: calc(7rem + 5vw);
+        height: calc(3rem + 1vw);
+        border-radius: 10px;
+        color: #fff;
+        font-family: "Lato", sans-serif;
+        font-size: calc(1rem + 1vw);
+        margin: 2rem;
     }
-    .container{
-    display: flex;
-    gap: 2rem;
-    margin: 3rem 3rem 0 3rem;
-    h1{
-    text-align: center;
+    #citacao {
+        text-align: left;
     }
-        p{
-            text-align:justify;
-                }
+    .container {
+        display: flex;
+        gap: 2rem;
+        margin: 3rem 10% 0 10%;
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+    .descricao {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(0.5rem + 1vw);
     }
 
-        .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5)
-}
+    .left-block {
+        flex-basis: 40%;
+    }
+    .right-block {
+        flex: 1 0 0%;
+        .img-anaya {
+            width: 100%;
+            max-width: 364px;
+            min-width: 160px;
+            margin-left: 10%;
+        }
+    }
     .col {
-    flex: 1 0 0%
-}
-    .img {
-    max-width: 100%;
-    height: auto
+        flex: 1 0 0%;
+    }
+    .imgs {
+        margin: 5rem 10% 0 10%;
+        .transtornos {
+            display: flex;
+            justify-content: space-around;
+            .imagem {
+                width: calc(100px + 1vw);
+                height: auto;
+            }
+        }
+    }
+    .game-pic {
+        max-width: 100%;
+        height: auto;
+    }
 }

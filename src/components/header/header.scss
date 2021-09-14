@@ -1,105 +1,126 @@
-// .headerContainer {
-//     nav {
-//         // height: 6.5rem;
-//         // display: flex;
-//         // justify-content: center;
-//         // padding: 2em;
-//         -webkit-box-ordinal-group: 2;
-//         order: 1;
-//         margin:2rem;
-        
-//     ul{
-//         // list-style: none;
-//         // margin: 0;
-//         // padding: 0;
-//         // display: flex;
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//         display: -webkit-box;
-//         display: flex;
-        
-        
-//         li{
-//             // margin-left: 2em;
-//             // display: flex;
-//             -webkit-box-flex: 3;
-//             flex: 3;
-//         a {
-//             // color: #fff;
-//             // text-decoration: none;
-//             // padding: 2em 4em;
-//             // align-self: center;
-//             text-decoration: none;
-//             color: #fff;
-//         }
-//     }
-//     }
-//     .circulo {
-//         width: 2.5rem;
-//         height: 2.5rem;
-//         border-radius: 50%;
-//         background-color: #ff98e5;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-    
-//     .bars{
-//         width: 1.5rem;
-//         height: 1.5rem;
-//         color: #fff;
-//     }
-// }
-// }
-// @media all and (max-width:768px) {
-//     .headerContainer{
-//         li
-//     {
-//     flex-basis: 100%;
-//     }
-//     }
-// }
-// }
-.headerContainer{
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato&family=Merienda:wght@700&family=Montserrat:wght@500&family=Poppins&display=swapdisplay=swap");
+.headerContainer {
     padding: 2em;
-    .nav{
+    .nav {
         display: flex;
         justify-content: space-between;
+        height: 20px;
+        margin-bottom: 5rem;
     }
-    .logo{
-        align-self: center;
+    .anaya {
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        a {
+            align-self: center;
+            margin-top: 1.5em;
+            .logo {
+                margin-left: 2.5em;
+                max-width: 60%;
+                height: auto;
+            }
+        }
     }
-    ul{
+
+    ul {
         display: flex;
         list-style: none;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
-        a{
+        a {
             text-decoration: none;
             color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.8rem;
         }
     }
-    .right-nav{
+    .right-nav {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
-        a{
+        a {
             text-decoration: none;
             color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.8rem;
         }
         .circulo {
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    border-radius: 50%;
-                    background-color: #ff98e5;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .bars{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                                color: #fff;
-                            }
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: #eccad7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bars {
+                width: 1.5rem;
+                height: 1.5rem;
+                color: #fff;
+            }
         }
     }
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: relative;
+    width: 25px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+
+/* Color/shape of burger icon bars */
+// .bm-burger-bars {
+// }
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    transform: scale(1.5);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    padding: 1rem;
+    margin-top: -60px;
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+// .bm-cross {
+// }
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    height: 100vh;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: linear-gradient(100deg, #a8c0ff 2%, #ffc2e2 98%);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    height: 120vh;
+    margin-top: -57px;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 2em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    padding: 1rem;
+}
+.bm-item:hover {
+    background: #ffc2e2;
+}
+.menu-item {
+    font-size: 2rem;
 }
