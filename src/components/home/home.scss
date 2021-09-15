@@ -1,11 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato&family=Merienda:wght@700&family=Montserrat:wght@500&family=Poppins&display=swapdisplay=swap");
-
+$sm: 400px;
+$md: 800px;
+$lg: 1200px;
+@mixin rwd($propertyName, $defaultValue, $mediaQueries: ()) {
+    #{$propertyName}: #{$defaultValue};
+    @each $breakpoint, $value in $mediaQueries {
+        @media (min-width: #{$breakpoint}) {
+            #{$propertyName}: #{$value};
+        }
+    }
+}
 .home {
     .top {
-        margin-bottom: 12rem;
+        @include rwd(
+            margin-bottom,
+            5rem,
+            (
+                $sm: 0rem,
+                $md: 8rem,
+                $lg: 12rem,
+            )
+        );
     }
     .bot {
-        margin-top: 10rem;
+        @include rwd(
+            margin-top,
+            5rem,
+            (
+                $sm: 10rem,
+                $md: 12rem,
+                $lg: 12rem,
+            )
+        );
     }
     .txtH1 {
         font-family: "Merienda", cursive;
@@ -16,7 +42,15 @@
 
     .txtP {
         font-family: "Montserrat", sans-serif !important;
-        font-size: 1.5rem !important;
+        @include rwd(
+            font-size,
+            calc(0.8rem + 1vw),
+            (
+                $sm: calc(0.5rem + 1vw),
+                $md: calc(0.8rem + 1vw),
+                $lg: calc(1rem + 1vw),
+            )
+        );
     }
 
     .txtMini {
@@ -24,7 +58,15 @@
     }
     .citacao {
         font-family: "Julius Sans One", sans-serif;
-        font-size: calc(2rem + 1vw);
+        @include rwd(
+            font-size,
+            calc(2rem + 1vw),
+            (
+                $sm: calc(1rem + 1vw),
+                $md: calc(1.5rem + 1vw),
+                $lg: calc(2rem + 1vw),
+            )
+        );
     }
     .btn {
         text-align: center;
@@ -40,6 +82,12 @@
         font-family: "Lato", sans-serif;
         font-size: calc(1rem + 1vw);
         margin: 2rem;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .botao:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(100deg, #b0c5fa 2%, #fac9e2 98%);
     }
     #citacao {
         text-align: left;
@@ -89,6 +137,15 @@
         }
     }
     .game-pic {
+        @include rwd(
+            margin-top,
+            5rem,
+            (
+                $sm: 0rem,
+                $md: 4rem,
+                $lg: 6rem,
+            )
+        );
         max-width: 100%;
         height: auto;
     }
