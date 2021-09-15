@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato&family=Merienda:wght@700&family=Montserrat:wght@500&family=Poppins&display=swapdisplay=swap");
+* {
+    font-family: Poppins, sans-serif;
+}
 .divisor-div {
     margin: 2rem 0 0 0;
     display: flex;
@@ -24,21 +28,44 @@
         a {
             padding: 0;
         }
+        p {
+            font-size: calc(0.8rem + 0.5vw);
+        }
     }
     .insta {
         max-width: 40px;
         height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .insta:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
     }
     .face {
         max-width: 40px;
         height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .face:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
     }
     .unknown {
-        max-width: 80px;
+        max-width: 8rem;
         height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .unknown:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
     }
     .arrow {
         max-width: 40px;
         height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .arrow:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
     }
 }
