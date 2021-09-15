@@ -18,6 +18,10 @@
                 margin-left: 2.5em;
                 max-width: 60%;
                 height: auto;
+                transition: all 0.3s ease-in-out;
+            }
+            .logo:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -33,6 +37,11 @@
             font-family: "Poppins", sans-serif;
             font-size: 0.8rem;
         }
+        li:hover {
+            border-bottom: 2px solid #eccad7;
+            border-radius: 5px;
+            padding-bottom: 0.1rem;
+        }
     }
     .right-nav {
         display: flex;
@@ -44,6 +53,11 @@
             font-family: "Poppins", sans-serif;
             font-size: 0.8rem;
         }
+        a:hover {
+            border-bottom: 2px solid #eccad7;
+            border-radius: 5px;
+            padding-bottom: 0.2rem;
+        }
         .circulo {
             width: 2.5rem;
             height: 2.5rem;
@@ -52,11 +66,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            .bars {
-                width: 1.5rem;
-                height: 1.5rem;
-                color: #fff;
-            }
         }
     }
 }
@@ -67,6 +76,10 @@
     height: 30px;
     left: 0px;
     top: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.bm-burger-button:hover {
+    transform: scale(1.2);
 }
 
 /* Color/shape of burger icon bars */
@@ -74,9 +87,9 @@
 // }
 
 /* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    transform: scale(1.5);
-}
+// .bm-burger-bars-hover {
+//     transform: scale(1.5);
+// }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -84,6 +97,10 @@
     margin-top: -60px;
     height: 24px;
     width: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.bm-cross-button:hover {
+    transform: scale(1.2);
 }
 
 /* Color/shape of close button cross */
@@ -101,7 +118,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
     background: linear-gradient(100deg, #a8c0ff 2%, #ffc2e2 98%);
-    padding: 2.5em 1.5em 0;
+    padding: 2.5em 0em 0 !important;
     font-size: 1.15em;
     height: 120vh;
     margin-top: -57px;
@@ -117,9 +134,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
     display: inline-block;
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 .bm-item:hover {
     background: #ffc2e2;
+    border: none !important;
+    padding: 2em 1.5em 2em !important;
+    border-radius: 0 !important;
+    // font-size: 1.15em !important;
 }
 .menu-item {
     font-size: 2rem;
