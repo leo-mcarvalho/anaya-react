@@ -1,7 +1,7 @@
 Grupo: Unknown
-Integrantes:
-	    Gustavo de Cássio Vasselai
-	    Joao Armando Alves Neto
-	    Leonardo Mendes Carvalho
-	    Otávio Viñé Masella
-	    Pedro Henrique Alves Silva
+Integrantes:				
+RM:	88264    Gustavo de Cássio Vasselai
+	88255    Joao Armando Alves Neto
+	87755    Leonardo Mendes Carvalho
+	89110    Otávio Viñé Masella
+	88795    Pedro Henrique Alves Silva
