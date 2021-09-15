@@ -2,37 +2,37 @@
 $sm: 400px;
 $md: 800px;
 $lg: 1200px;
+
 @mixin rwd($propertyName, $defaultValue, $mediaQueries: ()) {
     #{$propertyName}: #{$defaultValue};
-    @each $breakpoint, $value in $mediaQueries {
+
+    @each $breakpoint,
+    $value in $mediaQueries {
         @media (min-width: #{$breakpoint}) {
             #{$propertyName}: #{$value};
         }
     }
 }
+
 .home {
     .top {
-        @include rwd(
-            margin-bottom,
+        @include rwd(margin-bottom,
             5rem,
-            (
-                $sm: 0rem,
+            ($sm: 0rem,
                 $md: 8rem,
-                $lg: 12rem,
-            )
-        );
+                $lg: 22rem,
+            ));
     }
+
     .bot {
-        @include rwd(
-            margin-top,
+        @include rwd(margin-top,
             5rem,
-            (
-                $sm: 10rem,
+            ($sm: 10rem,
                 $md: 12rem,
                 $lg: 12rem,
-            )
-        );
+            ));
     }
+
     .txtH1 {
         font-family: "Merienda", cursive;
         font-size: 3rem;
@@ -42,35 +42,32 @@ $lg: 1200px;
 
     .txtP {
         font-family: "Montserrat", sans-serif !important;
-        @include rwd(
-            font-size,
+        @include rwd(font-size,
             calc(0.8rem + 1vw),
-            (
-                $sm: calc(0.5rem + 1vw),
+            ($sm: calc(0.5rem + 1vw),
                 $md: calc(0.8rem + 1vw),
                 $lg: calc(1rem + 1vw),
-            )
-        );
+            ));
     }
 
     .txtMini {
         font-family: "Lato", sans-serif;
     }
+
     .citacao {
         font-family: "Julius Sans One", sans-serif;
-        @include rwd(
-            font-size,
+        @include rwd(font-size,
             calc(2rem + 1vw),
-            (
-                $sm: calc(1rem + 1vw),
+            ($sm: calc(1rem + 1vw),
                 $md: calc(1.5rem + 1vw),
                 $lg: calc(2rem + 1vw),
-            )
-        );
+            ));
     }
+
     .btn {
         text-align: center;
     }
+
     .botao {
         background: linear-gradient(100deg, #a8c0ff 2%, #ffc2e2 98%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -85,24 +82,30 @@ $lg: 1200px;
         transition: 0.3s;
         cursor: pointer;
     }
+
     .botao:hover {
         transform: translateY(-2px);
         background: linear-gradient(100deg, #b0c5fa 2%, #fac9e2 98%);
     }
+
     #citacao {
         text-align: left;
     }
+
     .container {
         display: flex;
         gap: 2rem;
         margin: 3rem 10% 0 10%;
+
         h1 {
             text-align: center;
         }
+
         p {
             text-align: justify;
         }
     }
+
     .descricao {
         font-family: Montserrat;
         font-style: normal;
@@ -113,39 +116,52 @@ $lg: 1200px;
     .left-block {
         flex-basis: 40%;
     }
+
     .right-block {
         flex: 1 0 0%;
+
         .img-anaya {
-            width: 100%;
-            max-width: 364px;
-            min-width: 160px;
-            margin-left: 10%;
+            @include rwd(max-width,
+                300px,
+                ($sm: 120%,
+                    $md: 100%,
+                    $lg: 80%,
+                ));
+            @include rwd(margin-left,
+                5%,
+                ($sm: 0,
+                    $md: 5%,
+                    $lg: 10%,
+                ));
+            height: auto;
         }
     }
+
     .col {
         flex: 1 0 0%;
     }
+
     .imgs {
         margin: 5rem 10% 0 10%;
+
         .transtornos {
             display: flex;
             justify-content: space-around;
+
             .imagem {
                 width: calc(100px + 1vw);
                 height: auto;
             }
         }
     }
+
     .game-pic {
-        @include rwd(
-            margin-top,
+        @include rwd(margin-top,
             5rem,
-            (
-                $sm: 0rem,
+            ($sm: 0rem,
                 $md: 4rem,
                 $lg: 6rem,
-            )
-        );
+            ));
         max-width: 100%;
         height: auto;
     }
